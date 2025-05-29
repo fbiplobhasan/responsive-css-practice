@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        .container div {
+            display: flex;
+            border: 2px solid tomato;
+            max-width: 1140px;
+            width: 100%;
+        }
+
+        /* .container div {
+            width: 100%;
+        } */
+
+        @media screen and (max-width:576px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (min-width: 993px) and (max-width:1200px) {
+            .container {
+                display: grid;
+                grid-template-rows: repeat(3,1fr);
+                
+            }
+            .img{
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </header>
+    <main>
+        <div class="container">
+            <div><img src="images/food.webp" alt=""></div>
+            <div><img src="images/tigar.jpg" alt=""></div>
+            <div><img src="images/lion.jpeg" alt=""></div>
+        </div>
+    </main>
+</body>
+
+</html>
