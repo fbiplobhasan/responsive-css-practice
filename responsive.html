@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
     <style>
-        .container div {
+        body{
+            max-width: 1140px;
+            border: 2px solid tomato;
+            margin: 0 auto;
+        }
+        .container {
             display: flex;
             border: 2px solid tomato;
-            max-width: 1140px;
+        }
+
+        .container div{
+            width: 30%;
+        }
+        .container img{
             width: 100%;
         }
 
+        .box{
+            width: 50%;
+        }
         /* .container div {
             width: 100%;
         } */
@@ -56,9 +69,9 @@
     </header>
     <main>
         <div class="container">
-            <div><img src="images/food.webp" alt=""></div>
-            <div><img src="images/tigar.jpg" alt=""></div>
-            <div><img src="images/lion.jpeg" alt=""></div>
+            <div class="box"><img src="images/food.webp" alt=""></div>
+            <div class="box"><img src="images/tigar.jpg" alt=""></div>
+            <div class="box"><img src="images/lion.jpeg" alt=""></div>
         </div>
     </main>
 </body>
